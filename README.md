@@ -3,10 +3,19 @@ objective-c 通用反射机制，原本是自用的，花了些许时间解耦�
 
 #### 使用方法很简单
 
-`#import <JJReflection.h>`
+```objective-c
+#import <JJReflection.h>
+//您的网络请求工具
+[Http postUrl:url param:param completion:^(id response, NSError *error){
+	//请求回来的模型，如果跟您建立的模型字段对应的话，可以直接转换
+	if(!error) Model *model = [Model modelWithDictionary:response];
+}];
+//以上是基本用法，详细用法和注意事项可以下载Demo查看
+```
 
-`[Http postUrl:url param:param completion:^(id response, NSError *error){`
+#### 支持CocoaPods
 
-`	Model *model = [Model modelWithDictionary:response];`
+```json
+pod 'JJReflection'
+```
 
-`}];`
