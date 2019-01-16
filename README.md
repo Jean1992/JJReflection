@@ -34,12 +34,12 @@ objective-c 通用反射机制，原本是自用的，花了些许时间解耦�
     "user_name": "JEAN908218375",
     "user_skills": [
         {
-            skill_name: "英雄联盟",
-            level: 138
+            "skill_name": "英雄联盟",
+            "level": 138
         },
         {
-            skill_name: "唱歌",
-            level: 99
+            "skill_name": "唱歌",
+            "level": 99
         }
     ],
     "user_info": {
